@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>search Bugatti</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background:linear-gradient(to right,grey,lightgrey,wheat);
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.4s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        button {
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+            font-size: 14px;
+        }
+
+        
+        .search-btn {
+            background: orange;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .search-btn:hover {
+            background: darkorange;
+            transform: scale(1.1) rotate(-2deg);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .search-btn:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="card">
+            <img src="bugatti2.jpg">
+            <h3>Bugatti Bolide</h3>
+            <form action="bugattibolide.html">
+            <button class="search-btn">SEARCH</button>
+            </form>
+        </div>
+        <div class="card">
+            <img src="bugatti3.jpg" alt="error">
+            <h3>Bugatti Tourbillon</h3>
+            <form action="bugatti tourbillon.html">
+            <button class="search-btn">SEARCH</button>
+            </form>
+        </div>
+        <div class="card">
+            <img src="bugatti6.webp" alt="error">
+            <h3>Bugatti Chiron</h3>
+            <form action="bugatti chiron.html">
+            <button class="search-btn">SEARCH</button>
+            </form>
+        </div>
+        <div class="card">
+            <img src="bugatti5.jpg">
+            <h3>Bugatti Divo</h3>
+            <form action="bugatti divo.html">
+            <button class="search-btn">SEARCH</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
